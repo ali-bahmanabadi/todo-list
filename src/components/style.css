@@ -1,0 +1,114 @@
+.input {
+  width: 90%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-box {
+  width: 100%;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 25px;
+  border: none;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px #000;
+}
+
+.input-box:focus {
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.input-submit {
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 50px;
+  position: absolute;
+  right: 0px;
+  border: none;
+  font-size: 15px;
+  background-color: #2f74c0;
+  color: #fff;
+  transition: 0.1s all;
+  box-shadow: 0 0 10px #000;
+}
+
+.input-submit:hover {
+  background-color: #388ae2;
+}
+
+.input-submit:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px #000;
+}
+
+.todos {
+  width: 46.5%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(50, 195, 205);
+}
+
+.todos-single {
+  padding: 20px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgb(206, 206, 5);
+  transition: 0.2s;
+}
+
+.todos-single:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
+
+.todos-single-text {
+  flex: 1;
+  border: none;
+  font-size: 20px;
+}
+
+.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.todos-single-text:focus {
+  outline: none;
+}
+
+.container {
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.todos-heading {
+  font-size: 30px;
+  color: #fff;
+}
+
+.remove {
+  background-color: rgb(248, 91, 91);
+}
+
+.drag-active {
+  background-color: rgb(0, 221, 236);
+}
+
+.drag-remove {
+  background-color: rgb(255, 38, 0);
+}
+
+.drag {
+  box-shadow: 0 0 20px #000;
+}
